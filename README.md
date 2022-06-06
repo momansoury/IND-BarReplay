@@ -15,5 +15,17 @@
    
 # برای هماهنگی بیشتر، ایدی تلگرام: @btc_usdt
 
+---
+
+## Roadmap
+- [ ] release v.Alpha
+- [ ] release v.Beta
+- [ ] final release 
+- [ ] OOP
+- [ ] buy & sell
+- [ ] create statement
+
+
 
  
+
