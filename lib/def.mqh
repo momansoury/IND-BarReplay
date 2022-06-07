@@ -1,29 +1,18 @@
-
-
-
-
-
-
-
-
-
-
-
-
+//+------------------------------------------------------------------+
+//|                                                      ProjectName |
+//|                                      Copyright 2018, CompanyName |
+//|                                       http://www.companyname.net |
+//+------------------------------------------------------------------+
 
 #define NL        "\n"                                                                //new line
 #define WinMid    WindowFirstVisibleBar() - ((int)WindowBarsPerChart() / 2)           //index of middle bar
 #define WinLast    WindowFirstVisibleBar() - (int)WindowBarsPerChart()                //index of last bar
-#define Price_Mid ND(WindowPriceMax() - (WindowPriceMax() - WindowPriceMin()) / 2)    //1/2 price
-#define Price_F   ND((WindowPriceMax() - WindowPriceMin()) / 4)                       //1/4 price
+#define Price_Mid ND(WindowPriceMax() - (WindowPriceMax() - WindowPriceMin()) / 2)    //1/2 price in a Win.
+#define Price_F   ND((WindowPriceMax() - WindowPriceMin()) / 4)                       //1/4 price in a Win
 
-
-
-
-
-
-
-
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
 void DeleteObject(string find)
    {
     for(int i = ObjectsTotal() - 1; i >= 0;  i--)
@@ -34,7 +23,9 @@ void DeleteObject(string find)
        }
    }
 
-
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
 bool VLineCreate(const long            chart_ID = 0,      // chart's ID
                  const string          name = "VLine",    // line name
                  const int             sub_window = 0,    // subwindow index
@@ -81,6 +72,9 @@ bool VLineCreate(const long            chart_ID = 0,      // chart's ID
     return(true);
    }
 
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
 bool ButtonCreate(const long              chart_ID = 0,             // chart's ID
                   const string            name = "Button",          // button name
                   const int               sub_window = 0,           // subwindow index
@@ -146,7 +140,10 @@ bool ButtonCreate(const long              chart_ID = 0,             // chart's I
 //--- successful execution
     return(true);
    }
-   
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
 bool ButtonChangeBGColor(const string name = "Button", // button name
                          const color back_clr = C'236,233,216',
                          const long   chart_ID = 0) // text
@@ -165,7 +162,7 @@ bool ButtonChangeBGColor(const string name = "Button", // button name
    }
 
 
-  
+
 
 
 
