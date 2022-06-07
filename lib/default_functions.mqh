@@ -11,9 +11,9 @@
 
 
 
-#define SPREAD    int(round((Ask - Bid)*MathPow(10,Digits)))                          //spread
 #define NL        "\n"                                                                //new line
 #define WinMid    WindowFirstVisibleBar() - ((int)WindowBarsPerChart() / 2)           //index of middle bar
+#define WinLast    WindowFirstVisibleBar() - (int)WindowBarsPerChart()                //index of last bar
 #define Price_Mid ND(WindowPriceMax() - (WindowPriceMax() - WindowPriceMin()) / 2)    //1/2 price
 #define Price_F   ND((WindowPriceMax() - WindowPriceMin()) / 4)                       //1/4 price
 
