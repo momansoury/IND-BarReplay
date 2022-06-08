@@ -21,7 +21,6 @@
 - [ ] release v.Alpha
 - [ ] release v.Beta
 - [ ] final release 
-- [ ] OOP
 - [ ] buy & sell
 - [ ] create statement
 
