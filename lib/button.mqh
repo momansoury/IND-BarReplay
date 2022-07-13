@@ -1,9 +1,9 @@
 
-void Create_BigButton(datetime &bar_time, string &bigbutton_name,)
+void Create_BigButton(datetime &bt, string &bn)
    {
-    if(bar_time)
+    if(bt)
        {
-        DeleteObject(bigbutton_name);
+        DeleteObject(bn);
         long bg_color;
         int x1, y1;
         datetime t3 = ibar_fixed();
@@ -11,8 +11,9 @@ void Create_BigButton(datetime &bar_time, string &bigbutton_name,)
         double hh = iHigh(NULL, 0, ibart);
         ChartTimePriceToXY(0, 0, t3, hh, x1, y1);
         ChartGetInteger(0, CHART_COLOR_BACKGROUND, 0, bg_color);
-        //RectangleCreate(0, rec_name, 0, bar_time, Price * 10, TimeCurrent() + (PERIOD_MN1 * 60), Price / 10, color(bg_color));
-        ButtonCreate(0, bigbutton_name, 0, x1, y1, 99999, 99999, 2, ANCHOR_RIGHT, "", color(bg_color), false, clrBlue);
+        //RectangleCreate(0, rec_name, 0, bt, Price * 10, TimeCurrent() + (PERIOD_MN1 * 60), Price / 10, color(bg_color));
+        ButtonCreate(0, bn, 0, x1, y1, 99999, 99999, 2, ANCHOR_RIGHT, "", color(bg_color), false, clrBlue);
        }
    }
+
 
