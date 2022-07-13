@@ -5,8 +5,8 @@
 //+------------------------------------------------------------------+
 
 #define NL        "\n"                                                                //new line
-#define WinMid    WindowFirstVisibleBar() - ((int)WindowBarsPerChart() / 2)           //index of middle bar
-#define WinLast    WindowFirstVisibleBar() - (int)WindowBarsPerChart()                //index of last bar
+#define WinMid    MathAbs(WindowFirstVisibleBar() - ((int)WindowBarsPerChart() / 2))  //index of middle bar
+#define WinLast   MathAbs(WindowFirstVisibleBar() - (int)WindowBarsPerChart())        //index of last bar
 #define Price_Mid ND(WindowPriceMax() - (WindowPriceMax() - WindowPriceMin()) / 2)    //1/2 price in a Win.
 #define Price_F   ND((WindowPriceMax() - WindowPriceMin()) / 4)                       //1/4 price in a Win
 
