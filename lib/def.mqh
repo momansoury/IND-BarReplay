@@ -21,7 +21,7 @@ void DeleteObject(string find)
      {
       string x = ObjectName(i);
       if(StringSubstr(x, 0) == find)
-         ObjectDelete(x);
+         ObjectDelete(0, x);
      }
   }
 
