@@ -21,6 +21,8 @@
 - [ ] release v.Alpha
 - [ ] release v.Beta
 - [ ] final release 
+- [ ] optimization
+- [ ] support multi indicators windows
 - [ ] buy & sell
 - [ ] create statement
 
