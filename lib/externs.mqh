@@ -1,5 +1,10 @@
+//+------------------------------------------------------------------+
+//|                                                      ProjectName |
+//|                                      Copyright 2018, CompanyName |
+//|                                       http://www.companyname.net |
+//+------------------------------------------------------------------+
 
-extern bool Show_TH = true;
+//extern bool Show_TH = true;
 extern string _Button_ = "===========# Button #===========";
 //extern ENUM_BASE_CORNER Corner = 2;
 extern int SET_width = 40;
@@ -22,3 +27,4 @@ datetime bar_time;
 
 
 
+//+------------------------------------------------------------------+

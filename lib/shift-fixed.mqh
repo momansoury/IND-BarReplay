@@ -18,7 +18,8 @@ datetime ibar_fixed()
    int sss = (int(WindowBarsPerChart() * (var2 / 100)));
    return(Time[aa + sss]);
   }
-  
-  
 
 
+
+
+//+------------------------------------------------------------------+
