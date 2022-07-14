@@ -20,6 +20,7 @@ void DeleteObject(string find)
    for(int i = ObjectsTotal() - 1; i >= 0;  i--)
      {
       string x = ObjectName(i);
+      //Print(StringFind(x,find),">>>>> ",x);
       if(StringFind(x,find))
          ObjectDelete(0, x);
      }
