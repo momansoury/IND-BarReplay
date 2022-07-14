@@ -11,7 +11,7 @@ void Create_BigButton()
   {
    if(bar_time)
      {
-      DeleteObject(bigbutton_name);
+      //DeleteObject(bigbutton_name);
       long bg_color;
       int x, y;
       go_fix();
