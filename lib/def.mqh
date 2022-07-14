@@ -20,8 +20,7 @@ void DeleteObject(string find)
    for(int i = ObjectsTotal() - 1; i >= 0;  i--)
      {
       string x = ObjectName(i);
-      //Print(StringFind(x,find),">>>>> ",x);
-      if(StringFind(x,find))
+      if(StringFind(x, find) != -1)
          ObjectDelete(0, x);
      }
   }
@@ -50,7 +49,7 @@ bool VLineCreate(const long            chart_ID = 0,      // chart's ID
    if(!ObjectCreate(chart_ID, name, OBJ_VLINE, sub_window, time, 0))
      {
       Print(__FUNCTION__,
-            ": failed to create a vertical line! Error code = ", GetLastError());
+            ": failed to create a vertical line! Error code = ", GetLastError(), " >>> ", ErrorDescription(GetLastError()));
       return(false);
      }
 //--- set line color
@@ -105,7 +104,7 @@ bool ButtonCreate(const long              chart_ID = 0,             // chart's I
    if(!ObjectCreate(chart_ID, name, OBJ_BUTTON, sub_window, 0, 0))
      {
       Print(__FUNCTION__,
-            ": failed to create the button! Error code = ", GetLastError());
+            ": failed to create the button! Error code = ", GetLastError(), " >>> ", ErrorDescription(GetLastError()));
       return(false);
      }
 //--- set button coordinates
@@ -157,7 +156,7 @@ bool ButtonChangeBGColor(const string name = "Button", // button name
    if(!ObjectSetInteger(chart_ID, name, OBJPROP_BGCOLOR, back_clr))
      {
       Print(__FUNCTION__,
-            ": failed to change the text! Error code = ", GetLastError());
+            ": failed to change the text! Error code = ", GetLastError(), " >>> ", ErrorDescription(GetLastError()));
       return(false);
      }
 //--- successful execution
