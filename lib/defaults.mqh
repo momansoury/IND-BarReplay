@@ -7,7 +7,7 @@
 #define NL        "\n"                                                                //new line
 #define WinMid    MathAbs(WindowFirstVisibleBar() - ((int)WindowBarsPerChart() / 2))  //index of middle bar
 #define chart_height    ChartGetInteger(0,CHART_HEIGHT_IN_PIXELS,0)                   //max height of chart
-#define chart_width     ChartGetInteger(0,CHART_WIDTH_IN_PIXELS,0)                   //max width of chart
+#define chart_width     ChartGetInteger(0,CHART_WIDTH_IN_PIXELS,0)                    //max width of chart
 #define WinLast   MathAbs(WindowFirstVisibleBar() - (int)WindowBarsPerChart())        //index of last bar
 #define Price_Mid ND(WindowPriceMax() - (WindowPriceMax() - WindowPriceMin()) / 2)    //1/2 price in a Win.
 #define Price_F   ND((WindowPriceMax() - WindowPriceMin()) / 4)                       //1/4 price in a Win
